@@ -4,16 +4,13 @@ document.querySelector(".arrow-up").addEventListener('click', () => {
 })
 // BASKET
 const allProducts = document.querySelector('.all-products')
-const resultSum = []
+const resultSum = [0]
 const shoppingCart = document.querySelector('.shopping-cart')
 const basket = document.querySelector('.basket')
 const sum = document.querySelector('.result-sum')
-const basketButton = document.querySelector('.basket-button')
 shoppingCart.addEventListener('click', () => {
 	basket.classList.toggle('active')
 	document.querySelector('.header-h1').classList.toggle('active')
-})
-basketButton.addEventListener('click', () => {
 	sum.textContent = `вся сумма: ${resultSum.map(i=>x+=i, x=0).reverse()[0]}`
 })
 
@@ -77,18 +74,19 @@ const citiesLinks = document.querySelector('.cities-links')
 const cities = document.querySelectorAll('.cities-links li')
 const burgerCity = document.querySelector('.header-burger-city-par');
 const map = document.querySelector('.map div')
+
 // function cityPromt() {
-// 		const cityAsk = alert('Ваш город Киев?')
-// 		if (cityAsk === true){
-// 				burgerCity.textContent = cities[0]
-// 				map.style.content = 'url(./img/cities-map/kiev-map2-cover-medium.jpg)'
-// 			}
-// 			else {
-// 					alert('Укажите свой город')
-// 				}
-// 				return burgerCity
-// 			}
-// 			cityPromt()
+	// 		const cityAsk = alert('Ваш город Киев?')
+	// 		if (cityAsk === true){
+		// 				burgerCity.textContent = cities[0]
+		// 				map.style.content = 'url(./img/cities-map/kiev-map2-cover-medium.jpg)'
+		// 			}
+		// 			else {
+			// 					alert('Укажите свой город')
+			// 				}
+			// 				return burgerCity
+			// 			}
+			// 			cityPromt()
 			function headerBurerCity() {
 				burgerCityArray.addEventListener('click', () => {
 					citiesLinks.classList.toggle('open');
