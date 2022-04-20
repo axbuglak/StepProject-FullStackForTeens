@@ -461,22 +461,21 @@ li.fade {
 	background-repeat: no-repeat;	
 	height: 100vh;
 	width: 100%;
-	display: grid;
-	grid-template-columns: 20% 60% 20%;
-	grid-template-rows: 15% 70% 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .map div {
 	height: 500px;
 	width: 800px;
-	grid-row: 2;
-	grid-column: 2;
-	/* margin-top: 100px;
-	margin-left: 100px;	 */
+	color: white;
+	text-align: center;
 }
 .map h1 {
 	color: white;
 	font-size: 80px;
 	grid-column: 2;
-	margin-left: 150px;
+	text-align: center;
 }
